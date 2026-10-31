@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aerolinea - Reserva de vuelos</title>
+</head>
+<body>
+
+    <header id="encabezado" class="encabezado">
+        <div class="logo"> ✈ AeroAndes </div>
+        <nav class="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#vuelos">Vuelos</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+            <a href="login.html">Iniciar sesion</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h1>Vuela a donde quieras</h1>
+            <p>Busca tu vuelo ideal en pocos pasos.</p>
+
+            <form id="form-busqueda" class="formulario-busqueda" action="#" method="get">
+                <div class="grupo-campo">
+                    <label for="origen">Origen</label>
+                    <input type="text" id="origen" name="origen" placeholder="Ciudad de origen" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="destino">Destino</label>
+                    <input type="text" id="destino" name="destino" placeholder="Ciudad de destino" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="fecha-ida">Fecha de ida</label>
+                    <input type="date" id="fecha-ida" name="fecha-ida" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="pasajeros">Pasajeros</label>
+                    <select id="pasajeros" name="pasajeros">
+                        <option value="1">1 pasajero</option>
+                        <option value="2">2 pasajeros</option>
+                        <option value="3">3 pasajeros</option>
+                        <option value="4">4 pasajeros</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="boton-principal">Buscar vuelos</button>
+            </form>
+        </section>
+
+        <section id="vuelos" class="seccion">
+            <h2>Vuelos disponibles</h2>
+            <table class="tabla-vuelos">
+                <thead>
+                    <tr>
+                        <th>Vuelo</th>
+                        <th>Origen</th>
+                        <th>Destino</th>
+                        <th>Salida</th>
+                        <th>Precio</th>
+                        <th>Accion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AE-101</td>
+                        <td>Bogota</td>
+                        <td>Medellin</td>
+                        <td>08:00</td>
+                        <td>$250.000</td>
+                        <td><button type="button" class="boton-reservar">Reservar</button></td>
+                    </tr>
+                    <tr>
+                        <td>AE-202</td>
+                        <td>Bogota</td>
+                        <td>Cali</td>
+                        <td>10:30</td>
+                        <td>$270.000</td>
+                        <td><button type="button" class="boton-reservar">Reservar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="servicios" class="seccion">
+            <h2>Nuestros servicios</h2>
+            <ul class="lista-servicios">
+                <li>Equipaje de mano incluido</li>
+                <li>Seleccion de asiento</li>
+                <li>Check-in en linea</li>
+                <li>Atencion 24 horas</li>
+            </ul>
+        </section>
+
+        <section id="contacto" class="seccion">
+            <h2>Contacto</h2>
+            <p>Telefono: +57 3504983478</p>
+            <p>Correo: aerolineas.a@gmail.com</p>
+        </section>
+    </main>
+
+    <footer id="pie" class="pie">
+        <p>&copy; 2026 AeroEjemplo. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

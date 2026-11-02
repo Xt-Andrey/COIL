@@ -12,3 +12,12 @@ Sección de Contacto y Acceso: Canales de atención al cliente y enlace directo 
 
 # Tecnologías Utilizadas
 HTML5: Maquetación semántica estructurada para una experiencia de usuario clara y accesible.
+
+# Estructura del proyecto 
+aeroandes/
+├── Aeroline.html       <-- Archivo principal con la estructura HTML
+├── css/
+│   └── styles.css      <-- La hoja de estilos que diseñamos
+├── js/
+│   └── main.js         <-- La lógica en JavaScript
+└── images/             <-- Carpeta  para guardar el logo u otras imágenes

@@ -13,11 +13,15 @@ Sección de Contacto y Acceso: Canales de atención al cliente y enlace directo 
 # Tecnologías Utilizadas
 HTML5: Maquetación semántica estructurada para una experiencia de usuario clara y accesible.
 
-# Estructura del proyecto 
-aeroandes/
-├── Aeroline.html       <-- Archivo principal con la estructura HTML
+## Estructura del Proyecto
+
+El proyecto está organizado de la siguiente manera para mantener una separación clara entre la maquetación, los estilos y la lógica de programación:
+
+```text
+AeroAndes-COIL/
+├── index.html          # Página principal de la plataforma de reservas
 ├── css/
-│   └── styles.css      <-- La hoja de estilos que diseñamos
+│   └── styles.css      # Hoja de estilos personalizada
 ├── js/
-│   └── main.js         <-- La lógica en JavaScript
-└── images/             <-- Carpeta  para guardar el logo u otras imágenes
+│   └── main.js         # Lógica interactiva y manejo de formularios
+└── README.md           # Documentación principal del proyecto colaborativo

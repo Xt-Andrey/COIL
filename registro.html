@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - AeroAndes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="contenedor-login">
+        <div class="tarjeta-login">
+
+            <h1 class="titulo">Registrarse</h1>
+            <p class="subtitulo">Crea tu cuenta para continuar</p>
+
+            <form id="form-registro" action="#" method="post">
+
+                <div class="fila-doble">
+                    <div class="grupo-campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Por ejemplo, Sebastian Camilo" required>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" id="apellidos" name="apellidos" placeholder="Por ejemplo, Mendoza Basto" required>
+                    </div>
+                </div>
+
+                <div class="fila-doble">
+                    <div class="grupo-campo">
+                        <label for="email">Correo electronico</label>
+                        <input type="email" id="email" name="email" placeholder="Por ejemplo, correo@gmail.com" required>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="celular">Celular</label>
+                        <input type="tel" id="celular" name="celular" placeholder="Por ejemplo, 3125693456" required>
+                    </div>
+                </div>
+
+                <div class="fila-botones">
+                    <button type="submit" class="boton-principal">Registrar</button>
+                    <a href="login.html" class="boton-atras">Atras</a>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+</body>
+</html>

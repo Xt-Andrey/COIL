@@ -144,6 +144,17 @@ select:focus {
   box-shadow: 0 0 0 3px rgba(11, 94, 168, 0.2);
 }
 
+/* Texto de ejemplo un poco más pequeño para que no se corte */
+input::placeholder {
+  font-size: 0.9rem;
+}
+
+/* La casilla (checkbox) no debe estirarse como los campos de texto */
+input[type="checkbox"] {
+  width: auto;
+  height: auto;
+}
+
 
 /* ---------- 4. Botones ---------- */
 
@@ -252,7 +263,118 @@ select:focus {
 }
 
 
-/* ---------- 9. Pantallas pequeñas (celular) ---------- */
+/* ---------- 9. Pantallas de login, registro y recuperar contraseña ---------- */
+
+/* Fondo de toda la pantalla, con la tarjeta centrada */
+.contenedor-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #0b5ea8, #36a3e8);
+}
+
+/* Tarjeta blanca donde va el formulario */
+.tarjeta-login {
+  width: 100%;
+  max-width: 620px;
+  padding: 32px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.titulo {
+  margin: 0 0 6px;
+  color: #0a2a4a;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.subtitulo {
+  margin: 0 0 24px;
+  color: #5b7a96;
+  text-align: center;
+}
+
+/* Separación entre un campo y el siguiente */
+.tarjeta-login .grupo-campo {
+  margin-bottom: 16px;
+}
+
+/* Dos campos lado a lado (registro) */
+.fila-doble {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.fila-doble .grupo-campo {
+  margin-bottom: 0;
+}
+
+/* "Recordarme" a la izquierda y el botón a la derecha */
+.fila-opciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0 20px;
+}
+
+.fila-opciones label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Botones "Registrar" y "Atras" */
+.fila-botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+/* "Atras" es un enlace que se ve como botón secundario */
+.boton-atras {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 28px;
+  border: 1px solid #b8d4ea;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #0a2a4a;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.boton-atras:hover {
+  background: #eaf4fb;
+}
+
+/* Botón que ocupa todo el ancho (recuperar contraseña) */
+.boton-ancho {
+  width: 100%;
+}
+
+/* Enlaces de abajo: "Olvide mi contraseña", "Registrar...", "Iniciar sesion" */
+.enlaces {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 24px;
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+
+
+/* ---------- 10. Pantallas pequeñas (celular) ---------- */
 
 @media (max-width: 700px) {
   .encabezado {
@@ -293,5 +415,24 @@ select:focus {
   /* Evita que el código del vuelo o el precio se partan en dos líneas */
   .tabla-vuelos td {
     white-space: nowrap;
+  }
+
+  /* Login, registro y recuperar: todo en una sola columna */
+  .tarjeta-login {
+    padding: 24px 18px;
+  }
+
+  .fila-doble {
+    flex-direction: column;
+  }
+
+  .fila-doble .grupo-campo {
+    flex: none;
+  }
+
+  .fila-opciones,
+  .fila-botones {
+    flex-direction: column;
+    align-items: stretch;
   }
 }
